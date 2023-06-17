@@ -1,0 +1,7 @@
+<h2>Upload picture and create the name:</h2>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Upload picture</button>
+</form>
+

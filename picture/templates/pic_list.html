@@ -1,0 +1,8 @@
+<h2>Uploaded Pictures:</h2>
+{% for picture in pictures %}
+   <p>Picture ID: {{ picture.id }} <br>
+       Picture name: {{ picture.name }}</p>
+   <img src="{{ picture.file.url }}" alt="{{ picture.name }}" width="400">
+{% empty %}
+    <p>No images uploaded yet.</p>
+{% endfor %}
